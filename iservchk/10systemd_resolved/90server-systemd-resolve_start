@@ -7,5 +7,9 @@ Test "add systemd-resolved to resolvconf interface-order"
   grep -q ^systemd-resolved$ /etc/resolvconf/interface-order
   ---
   sed -i -E '/^# interface-order\(5\)/a\systemd-resolved' /etc/resolvconf/interface-order
-  resolvconf -u
 
+Check /etc/resolvconf/update.d/systemd-resolved
+ChPerm 0755 root:root /etc/resolvconf/update.d/systemd-resolved
+
+Shell "update resolvconf"
+  ! [ $REPAIR ] || resolvconf -u
