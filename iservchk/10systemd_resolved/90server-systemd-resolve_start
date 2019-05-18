@@ -1,0 +1,11 @@
+MkDir 0755 root:root /etc/systemd/resolved.conf.d
+Check /etc/systemd/resolved.conf.d/iserv.conf
+
+Start systemd-resolved systemd-resolved
+
+Check /etc/resolvconf/update.d/systemd-resolved
+ChPerm 0755 root:root /etc/resolvconf/update.d/systemd-resolved
+
+Shell "update resolvconf"
+  ! [ $REPAIR ] || resolvconf -u
+

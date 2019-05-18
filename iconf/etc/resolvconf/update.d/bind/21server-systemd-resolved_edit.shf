@@ -1,0 +1,3 @@
+#!/bin/sh
+
+sed -E 's#^RSLVCNFFILES=.+#RSLVCNFFILES="$(/lib/resolvconf/list-records | grep -E "^systemd-resolved$")"#g'

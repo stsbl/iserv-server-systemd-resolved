@@ -1,0 +1,18 @@
+#!/bin/sh
+set -e
+
+case "$1" in
+  remove|purge|abort-install|disappear)
+    if ! dpkg-divert --list | grep -F "/etc/resolvconf/update.d/bind.distrib"
+    then
+      rm -f /etc/resolvconf/update.d/bind
+      dpkg-divert --package stsbl-iserv-server-systemd-resolve --remove --rename /etc/resolvconf/update.d/bind
+    fi
+
+    rm -f /etc/resolvconf/update.d/systemd-resolved
+    rm -f /run/systemd/resolved.conf.d/resolvconf.conf
+    deb-systemd-invoke restart systemd-resolved || true
+  ;;
+esac
+
+#DEBHELPER#

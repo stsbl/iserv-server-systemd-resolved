@@ -10,6 +10,7 @@ Package: stsbl-iserv-server-systemd-resolved
 Architecture: all
 Depends: ${misc:Depends},
   ${perl:Depends},
+  init-system-helpers,
   iserv-update,
   systemd,
 Description: IServ systemd-resolved-Server
