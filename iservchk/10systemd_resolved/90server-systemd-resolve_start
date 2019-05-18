@@ -3,3 +3,10 @@ Check /etc/systemd/resolved.conf.d/iserv.conf
 
 Start systemd-resolved systemd-resolved
 
+Test "add systemd-resolved to resolvconf interface-order"
+  grep -q ^systemd-resolved$ /etc/resolvconf/interface-order
+  ---
+  sed -i -E '/^# interface-order\(5\)/a'\
+      'systemd-resolved' /etc/resolvconf/interface-order
+  resolvconf -u
+
