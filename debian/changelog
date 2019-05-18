@@ -1,3 +1,9 @@
+stsbl-iserv-server-systemd-resolve (19.05.18-2) unstable; urgency=medium
+
+  * Conflict with portal
+
+ -- Felix Jacobi <Felix@jacobi-hamburg.net>  Sat, 18 May 2019 19:47:21 +0200
+
 stsbl-iserv-server-systemd-resolve (19.05.18-1) unstable; urgency=medium
 
   * Initial Release.
