@@ -1,2 +1,4 @@
 [Resolve]
-DNSSEC=allow-downgrade
+# TODO Disabled because low low implementation rate of DNSSEC for now, reenable later!
+#DNSSEC=allow-downgrade
+DNSSEC=no

@@ -16,3 +16,4 @@ Depends: ${misc:Depends},
 Description: IServ systemd-resolved-Server
  Konfiguriert die systemd-Komponente resolved für das Weiterleiten von
  DNS-Abfragen vom lokalen Gerät.
+Tag: suite::iserv
