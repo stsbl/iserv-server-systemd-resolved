@@ -1,3 +1,2 @@
 [Resolve]
-DNSSEC=true
-
+DNSSEC=allow-downgrade
