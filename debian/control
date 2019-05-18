@@ -8,6 +8,7 @@ Standards-Version: 4.3.0
 
 Package: stsbl-iserv-server-systemd-resolved
 Architecture: all
+Conflicts: iserv-portal,
 Depends: ${misc:Depends},
   ${perl:Depends},
   init-system-helpers,
