@@ -2,18 +2,14 @@ Source: stsbl-iserv-server-systemd-resolved
 Section: misc
 Priority: optional
 Maintainer: Stadtteilschule Blankenese <repository@stsbl.de>
-Build-Depends: debhelper (>= 10)
-Build-Depends-Indep: iserv3-dev
-Standards-Version: 4.3.0
+Build-Depends: debhelper-compat (= 13), dh-sequence-iserv, dh-sequence-stsbl
+Standards-Version: 4.5.0
 
 Package: stsbl-iserv-server-systemd-resolved
 Architecture: all
-Conflicts: iserv-portal,
-Depends: ${misc:Depends},
-  ${perl:Depends},
-  iserv-update,
-  systemd,
-Xb-Private-IServ-Revision: ${iserv:Revision}
+Conflicts: iserv-portal
+Depends: iserv-update, systemd, ${misc:Depends}, ${perl:Depends}
+Xb-Private-Iserv-Revision: ${iserv:Revision}
 Description: IServ systemd-resolved-Server
  Konfiguriert die systemd-Komponente resolved für das Weiterleiten von
  DNS-Abfragen vom lokalen Gerät.

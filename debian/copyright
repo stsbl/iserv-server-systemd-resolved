@@ -2,16 +2,16 @@ Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: stsbl-iserv-server-systemd-resolve
 
 Files: *
-Copyright: 2019 Felix Jacobi <Felix@jacobi-hamburg.net>
+Copyright: 2021 Felix Jacobi <Felix@jacobi-hamburg.net>
 License: MIT
 
 Files: iconf/etc/resolvconf/update.d/systemd-resolved/20server-systemd-resolved_hook
-Copyright: 2019 Thomas Hood <jdthood@yahoo.co.uk>
+Copyright: 2021 Thomas Hood <jdthood@yahoo.co.uk>
  2019 Felix Jacobi <Felix@jacobi-hamburg.net>
 License: GPL2+
 
 Files: debian/*
-Copyright: 2019 Stadtteilschule Blankenese <repository@stsbl.de>
+Copyright: 2021 Stadtteilschule Blankenese <repository@stsbl.de>
 License: MIT
 
 License: GPL-2+
@@ -46,7 +46,6 @@ License: MIT
  OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
  MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
  IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
- CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, 
- TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE 
+ CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
  SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
