@@ -1,3 +1,13 @@
+stsbl-iserv-server-systemd-resolved (21.06.20.1) stable; urgency=medium
+
+  * Added Xb-Private-IServ-Revision
+  * Bumped copyright
+  * Moved to iservinstall, updated copyright
+  * Turned source format to native
+  * Added homepage
+
+ -- Felix Jacobi <Felix@jacobi-hamburg.net>  Sun, 20 Jun 2021 22:33:35 +0200
+
 stsbl-iserv-server-systemd-resolved (19.05.18-9) unstable; urgency=medium
 
   * Fixed postrm
