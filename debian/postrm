@@ -6,3 +6,5 @@ case "$1"
      rm -f /etc/resolvconf/update.d/systemd-resolved
   ;;
 esac
+
+#DEBHELPER#
