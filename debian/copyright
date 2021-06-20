@@ -8,13 +8,13 @@ License: MIT
 Files: iconf/etc/resolvconf/update.d/systemd-resolved/20server-systemd-resolved_hook
 Copyright: 2019 Thomas Hood <jdthood@yahoo.co.uk>
  2019 Felix Jacobi <Felix@jacobi-hamburg.net>
-License: GPL2+
+License: GPL-2+
 
 Files: debian/*
 Copyright: 2021 Stadtteilschule Blankenese <repository@stsbl.de>
 License: MIT
 
-License: GPL2+
+License: GPL-2+
  This program is free software; you can redistribute it and/or
  modify it under the terms of the GNU General Public License
  as published by the Free Software Foundation; either version 2
