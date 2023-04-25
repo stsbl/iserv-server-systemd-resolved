@@ -1,0 +1,5 @@
+#!/bin/sh
+sed -r \
+  -e '/^hosts:/ s/$/ resolve [!UNAVAIL=return]/' \
+|| cat
+true
