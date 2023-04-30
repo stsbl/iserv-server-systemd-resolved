@@ -1,5 +1,5 @@
 #!/bin/sh
 sed -r \
-  -e '/^hosts:/ s/$/ resolve [!UNAVAIL=return]/' \
+  -E -e '/^hosts:/ s/(\b)(dns\b)/\1resolve [!UNAVAIL=return] \2/' \
 || cat
 true
