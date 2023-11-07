@@ -9,7 +9,11 @@ Homepage: https://it.stsbl.de/
 Package: stsbl-iserv-server-systemd-resolved
 Architecture: all
 Conflicts: iserv-portal
-Depends: iserv-update, systemd, ${misc:Depends}, ${perl:Depends}
+Depends: iserv-update,
+  systemd,
+  systemd-resolved | iserv-transition (<< 12:0),
+  ${misc:Depends},
+  ${perl:Depends},
 Xb-Private-Iserv-Revision: ${iserv:Revision}
 Description: IServ systemd-resolved-Server
  Konfiguriert die systemd-Komponente resolved für das Weiterleiten von
