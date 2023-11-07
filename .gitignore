@@ -4,3 +4,4 @@ debian/stsbl-iserv-server-systemd-resolve.debhelper.log
 debian/files
 debian/debhelper-build-stamp
 debian/*.debhelper
+/Makefile.iservmake
