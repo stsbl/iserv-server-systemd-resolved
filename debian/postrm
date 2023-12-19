@@ -4,6 +4,17 @@ set -e
 case "$1"
   in "remove"|"purge")
      rm -f /etc/resolvconf/update.d/systemd-resolved
+     if command -v resolvconf 2>&1 >/dev/null
+     then
+       resolvconf -d systemd-resolved ||:
+     fi
+     rm -f /run/systemd/resolved.conf.d/resolvconf.conf
+     if [ -d "/run/systemd/resolved.conf.d" ]
+     then
+       rmdir --ignore-fail-on-non-empty /run/systemd/resolved.conf.d
+     fi
+     deb-systemd-helper stop systemd-resolved ||:
+     deb-systemd-helper disable systemd-resolved ||:
   ;;
 esac
 
