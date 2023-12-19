@@ -8,7 +8,7 @@ Homepage: https://it.stsbl.de/
 
 Package: stsbl-iserv-server-systemd-resolved
 Architecture: all
-Conflicts: iserv-portal
+Breaks: iserv-server-dns
 Depends: iserv-update,
   systemd,
   systemd-resolved | iserv-transition (<< 12:0),
