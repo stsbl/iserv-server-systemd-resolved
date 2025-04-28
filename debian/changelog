@@ -1,3 +1,10 @@
+stsbl-iserv-server-systemd-resolved (25.04.28.1) stable; urgency=medium
+
+  * iservmake: Disabled Pootle download
+  * Added workaround for broken /etc/network/if-up.d/resolved (Bookworm)
+
+ -- Felix Jacobi <Felix@jacobi-hamburg.net>  Mon, 28 Apr 2025 13:47:29 +0200
+
 stsbl-iserv-server-systemd-resolved (23.12.19.1) stable; urgency=medium
 
   * Ignore Makefile.iservmake
